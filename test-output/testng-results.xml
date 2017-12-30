@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2017-12-30T07:41:10Z" name="Free CRM Appication Test Automation Suite" finished-at="2017-12-30T07:41:41Z" duration-ms="30568">
+    <groups>
+    </groups>
+    <test started-at="2017-12-30T07:41:10Z" name="Free CRM Test cases" finished-at="2017-12-30T07:41:41Z" duration-ms="30568">
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@65c7a252]" started-at="2017-12-30T13:11:10Z" name="setUp" finished-at="2017-12-30T13:11:19Z" duration-ms="8990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="freeCRMLogoTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@65c7a252]" started-at="2017-12-30T13:11:19Z" name="freeCRMLogoTest" finished-at="2017-12-30T13:11:20Z" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeCRMLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@65c7a252]" started-at="2017-12-30T13:11:20Z" name="tearDown" finished-at="2017-12-30T13:11:21Z" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@65c7a252]" started-at="2017-12-30T13:11:21Z" name="setUp" finished-at="2017-12-30T13:11:27Z" duration-ms="6221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@65c7a252]" started-at="2017-12-30T13:11:27Z" name="login" finished-at="2017-12-30T13:11:38Z" duration-ms="11426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@65c7a252]" started-at="2017-12-30T13:11:38Z" name="tearDown" finished-at="2017-12-30T13:11:41Z" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+    </test> <!-- Free CRM Test cases -->
+  </suite> <!-- Free CRM Appication Test Automation Suite -->
+</testng-results>
