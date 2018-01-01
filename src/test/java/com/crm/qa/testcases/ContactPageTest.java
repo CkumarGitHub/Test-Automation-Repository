@@ -60,7 +60,7 @@ public class ContactPageTest extends TestBase{
 		
 	@DataProvider
 	public Iterator<Object[]> getTestData() {
-		ArrayList<Object[]> testdata=TestUtil.getDataFromExcel();
+		ArrayList<Object[]> testdata=TestUtil.getContactDataFromExcel("ContactData");
 		
 		return testdata.iterator();
 		

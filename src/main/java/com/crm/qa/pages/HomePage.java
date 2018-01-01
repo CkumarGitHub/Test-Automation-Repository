@@ -69,11 +69,12 @@ public class HomePage extends TestBase{
 		
 	}
 	
-	public void clickOnNewDealLink() {
+	public NewDealPage clickOnNewDealLink() {
 		
 		Actions action=new Actions(driver);
 		action.moveToElement(dealsLink).build().perform();
 		newDealLink.click();
+		return new NewDealPage();
 		
 	}
 	

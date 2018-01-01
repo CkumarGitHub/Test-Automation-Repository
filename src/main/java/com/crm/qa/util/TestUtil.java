@@ -20,7 +20,7 @@ public class TestUtil extends TestBase{
 		driver.switchTo().frame("mainpanel");
 	}
 	
-	public static ArrayList<Object[]> getDataFromExcel() {
+	public static ArrayList<Object[]> getDealDataFromExcel(String sheetname) {
 		
 		ArrayList<Object[]> testData=new ArrayList<Object[]>();
 		
@@ -33,16 +33,16 @@ public class TestUtil extends TestBase{
 			e.printStackTrace();
 		}
 		
-		int rowCount=reader.getRowCount("ContactData");
+		int rowCount=reader.getRowCount(sheetname);
 		
 		for(int rowNum=2;rowNum<=rowCount;rowNum++)
 		{
-			String title=reader.getCellData("ContactData", "title", rowNum);
-			String fname=reader.getCellData("ContactData", "firstname", rowNum);
-			String lname=reader.getCellData("ContactData", "lastname", rowNum);
-			String companyname=reader.getCellData("ContactData", "company", rowNum);
+			String title=reader.getCellData(sheetname, "title", rowNum);
+			String company=reader.getCellData(sheetname, "company", rowNum);
+			String contact=reader.getCellData(sheetname, "primaycontact", rowNum);
+			String amount=reader.getCellData(sheetname, "amount", rowNum);
 			
-			Object[] obj= {title,fname,lname,companyname};
+			Object[] obj= {title,company,contact,amount};
 			testData.add(obj);
 		}
 		
@@ -59,7 +59,35 @@ public class TestUtil extends TestBase{
 		
 	}
 	
-	
+public static ArrayList<Object[]> getContactDataFromExcel(String sheetname) {
+		
+		ArrayList<Object[]> testData=new ArrayList<Object[]>();
+		
+		try {
+			reader= new Xls_Reader("C:\\Users\\CK\\eclipse-workspace\\FreeCRMTest\\"
+					+ "src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx");
+				
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		int rowCount=reader.getRowCount(sheetname);
+		
+		for(int rowNum=2;rowNum<=rowCount;rowNum++)
+		{
+			String title=reader.getCellData(sheetname, "title", rowNum);
+			String fname=reader.getCellData(sheetname, "firstname", rowNum);
+			String lname=reader.getCellData(sheetname, "lastname", rowNum);
+			String companyname=reader.getCellData(sheetname, "company", rowNum);
+			
+			Object[] obj= {title,fname,lname,companyname};
+			testData.add(obj);
+		}
+		
+		return testData;
+		
+	}
 	
 	
 	
